@@ -39,7 +39,6 @@ export default defineComponent({
   },
   watch: {
     currentStep() {
-      console.log('change');
       this.printCurrent();
       this.setProgressClass(this.currentStep);
     },
