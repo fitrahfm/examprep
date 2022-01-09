@@ -1,0 +1,24 @@
+.ps__stepper {
+  width: 100%;
+  height: 32px;
+  overflow: hidden;
+
+  .ps__blocks {
+    background-color: #dddddd;
+    border-right: 1px solid white;
+    width: 20%;
+    padding: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    &.--done,
+    &.--current {
+      background-color: $primary;
+    }
+
+    span {
+      color: #ffffff;
+    }
+  }
+}

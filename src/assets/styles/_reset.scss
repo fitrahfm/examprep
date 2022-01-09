@@ -1,0 +1,70 @@
+body,
+html {
+  overscroll-behavior: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+  outline: none;
+  list-style: none;
+
+  box-sizing: border-box;
+  border-collapse: inherit;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+
+  user-select: none;
+  -webkit-text-rendering: optimizeSpeed;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+video {
+  width: 100%;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+}
+
+figure,
+section,
+footer {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+li {
+  font-weight: normal;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  outline: 0;
+  border: 0;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}

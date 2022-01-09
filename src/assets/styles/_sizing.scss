@@ -1,0 +1,12 @@
+$sizes: ("xs": 4px, "sm": 8px, "md": 16px, "lg": 20px, "xl": 24px);
+
+@each $size, $length in $sizes {
+  .radius-#{$size} { border-radius: $length; }
+}
+
+// w-(size) -- width
+@each $prop, $abbrev in (width: w, height: h) {
+  @for $size from 0 through 20 {
+    .#{$abbrev}-#{$size * 5} { #{$prop}: ($size / 20) * 100% !important; }
+  }
+}

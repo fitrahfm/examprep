@@ -1,0 +1,53 @@
+// app global css in SCSS form
+@import 'src/assets/styles/reset';
+@import 'src/assets/styles/quasar-custom';
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/sizing';
+
+body {
+  background-color: $light-grey;
+}
+
+.footer__link:not(.footer__link.--right) {
+  a:before {
+    display: inline-block;
+    content: '\2022';
+    padding: 4px;
+    font-size: 24px;
+    line-height: 0px;
+  }
+}
+
+.page__header {
+  background-color: #ffffff;
+}
+
+.sub__concept {
+  width: 100%;
+  .sub__block {
+    width: 100%;
+    height: 16px;
+    border: 1px solid #ffffff;
+    background-color: $grey;
+    &.--active {
+      background-color: $primary;
+    }
+  }
+}
+
+.mastery__keys {
+  height: fit-content;
+  border: 1px solid #dddddd;
+  .keys__title {
+    font-size: 16px;
+  }
+}
+
+.sub__tooltip {
+  background-color: #ffffff;
+  border: 2px solid #E0E0E0;
+}
+
+.q-slider__inner.absolute {
+  background-color: $primary;
+}

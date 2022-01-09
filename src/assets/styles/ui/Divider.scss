@@ -1,0 +1,7 @@
+@import 'src/assets/styles/variables';
+
+.divider {
+  &.--h {
+    border-bottom: 1px solid $grey;
+  }
+}
