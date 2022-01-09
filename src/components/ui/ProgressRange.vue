@@ -2,9 +2,16 @@
   <q-slider readonly v-model="sliderValue" :min="0" :max="100"
     :inner-min="value.min"
     :inner-max="value.max"
+    thumb-size="24px"
     label
-    :label-value="value.current"
-  />
+    label-always
+  >
+      <div
+        class="marker__label"
+      >
+        <span>{{ value.current }}</span>
+      </div>
+  </q-slider>
 </template>
 
 <script>
